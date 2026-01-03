@@ -14,4 +14,18 @@
 
 <button type="button" (click)="toggleDisplay()">Toggle</button>
 <div i18n [attr.aria-label]="toggleAriaLabel()">{{ toggle() }}</div>
+<h1 i18n="site header|An introduction header for this sample">Hello i18n!</h1>
+<span i18n
+  >Updated
+  {minutes, plural, =0 {just now} =1 {one minute ago} other {{{ minutes }} minutes ago}}</span
+>
+<span i18n>The author is {gender, select, male {male} female {female} other {other}}</span>
+<span i18n
+  >Updated:
+  {minutes, plural,
+    =0 {just now}
+    =1 {one minute ago}
+    other {{{ minutes }} minutes ago by {gender, select, male {male} female {female} other {other}}}
+  }
+</span>
 <router-outlet />

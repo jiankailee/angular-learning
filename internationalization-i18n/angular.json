@@ -13,7 +13,13 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "en-CA"
+        "sourceLocale": "en-CA",
+        "locales": {
+          "fr": {
+            "translation": "src/locale/messages.fr.xlf",
+            "baseHref": "fr/"
+          }
+        }
       },
       "architect": {
         "build": {
@@ -32,7 +38,8 @@
             ],
             "polyfills": [
               "@angular/localize/init"
-            ]
+            ],
+            "localize": true
           },
           "configurations": {
             "production": {
@@ -54,6 +61,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "fr": {
+              "localize": ["fr"]
             }
           },
           "defaultConfiguration": "production"
@@ -66,6 +76,9 @@
             },
             "development": {
               "buildTarget": "internationalization-i18n:build:development"
+            },
+            "fr": {
+              "buildTarget": "internationalization-i18n:build:development,fr"
             }
           },
           "defaultConfiguration": "development"

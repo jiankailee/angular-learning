@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-CA" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8390320941411685208" datatype="html">
+        <source>Eat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ toggle() }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2077201021623808633" datatype="html">
+        <source>Hello i18n!</source>
+        <target>Bonjour i18n !</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">17,20</context>
+        </context-group>
+        <note priority="1" from="description">An introduction header for this sample</note>
+        <note priority="1" from="meaning">site header</note>
+      </trans-unit>
+      <trans-unit id="4606963464835766483" datatype="html">
+        <source>Updated <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other {{{ minutes }} minutes ago}}" xid="1887283401472369100"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2002272803511843863" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago}}</source>
+        <target>{VAR_PLURAL, plural, =0 {à l'instant} =1 {il y a une minute} other {il y a <x id="INTERPOLATION" equiv-text="{{minutes}}"/> minutes} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3560311772637911677" datatype="html">
+        <source>The author is <x id="ICU" equiv-text="{gender, select, male {male} female {female} other {other}}" xid="7670372064920373295"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7670372064920373295" datatype="html">
+        <source>{VAR_SELECT, select, male {male} female {female} other {other}}</source>
+        <target>{VAR_SELECT, select, male {un homme} female {une femme} other {autre} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3967965900462880190" datatype="html">
+        <source>Updated: <x id="ICU" equiv-text="{minutes, plural,
+    =0 {just now}
+    =1 {one minute ago}
+    other {{{ minutes }} minutes ago by {gender, select, male {male} female {female} other {other}}}
+  }" xid="6988904457887003660"/>
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">25,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2508975984005233379" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago by {VAR_SELECT, select, male {male} female {female} other {other}}}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.html</context>
+          <context context-type="linenumber">25,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2446292996678765571" datatype="html">
+        <source> Show</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">A button to toggle status</note>
+        <note priority="1" from="meaning">Toggle Button</note>
+      </trans-unit>
+      <trans-unit id="1449033963238829757" datatype="html">
+        <source> Hide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">A button to toggle status</note>
+        <note priority="1" from="meaning">Toggle Button</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
